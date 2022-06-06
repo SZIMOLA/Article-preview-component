@@ -99,6 +99,7 @@ article .img-box {
     align-content: center;
     visibility: hidden;
     opacity: 0;
+    border-radius: 0 0 10px 10px;
     transition: all 0.3s ease-in-out
 }
 
