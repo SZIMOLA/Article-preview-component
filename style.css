@@ -1,0 +1,247 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:root {
+    /*colors*/
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%)
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px
+}
+
+body {
+    height: 100vh;
+    background: var(--LightGrayishBlue);
+    line-height: 1.7;
+    color: var(--DesaturatedDarkBlue);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%)
+}
+
+/*Mobile*/
+
+article {
+    margin: 0 1.8rem;
+    box-shadow: rgba(17, 12, 46, 0.05) 0px 48px 100px 0px;
+    border-radius: 1rem
+}
+
+article .img-box {
+    background: url(images/drawers.jpg) no-repeat center;
+    background-size: 110% auto;
+    height: 53vw;
+    width: 100%
+}
+
+.text-box {
+    padding: 3rem 2.4rem 1.6rem 2.4rem;
+    background: white;
+    position: relative
+}
+
+.share-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: var(--VeryDarkGrayishBlue);
+    padding: 1.8rem 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--GrayishBlue);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out
+}
+
+.share-box.on {
+    visibility: visible;
+    opacity: 1
+}
+
+.share-box .share {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -0.25rem;
+    background: hsl(214, 17%, 51%) url(images/icon-share-w.svg) no-repeat center center;
+    background-size: 50%
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.4rem
+}
+
+.icons {
+    width: 60%
+}
+
+.icons a {
+    margin: 0 0.5rem;
+    cursor: pointer
+}
+
+.author-box .img-box {
+    width: 3rem;
+    height: 3rem;
+    background: url(images/avatar-michelle.jpg) no-repeat top;
+    background-size: 100% auto;
+    border-radius: 50px
+}
+
+.author-box .info {
+    width: 60%
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: hsl(210, 46%, 95%) url(images/icon-share.svg) no-repeat center center;
+    background-size: 50% auto;
+    cursor: pointer
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+@media screen and (min-width:768px) {
+    article {
+        display: flex;
+        width: 80vw;
+        margin: 0
+    }
+
+    article .img-box {
+        height: auto;
+        background-size: cover;
+        width: 40%
+    }
+
+    article .text-box {
+        height: auto;
+        width: 60%;
+        padding: 3rem 3rem 2.3rem 3rem
+    }
+
+    article .author-box {
+        margin-top: 1.5rem
+    }
+
+    .author-box .info {
+        width: 70%
+    }
+
+    .share-box {
+        width: 100%;
+        bottom: 7rem;
+        right: -5.25rem;
+        padding: 1.2rem 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        border-radius: 10px
+    }
+
+    .share-box:after {
+        content: "";
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        background: var(--VeryDarkGrayishBlue);
+        bottom: -0.6rem;
+        transform: rotate(-45deg);
+        left: calc(50% - 1rem)
+    }
+
+    .share-box span {
+        padding: 0 1rem
+    }
+
+    .share-box .share {
+
+        display: none
+    }
+
+    .share-box .icons {
+        width: auto
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    article {
+        width: 56.2vw;
+    }
+
+    article .img-box {
+        background-size: 120%;
+        background-position: left;
+    }
+
+    @media screen and (min-width:1921px) {
+        html {
+            font-size: calc(1rem + 0.2vw)
+        }
+
+        article {
+            width: 36.2vw;
+        }
+
+        article .img-box {
+            background-size: cover
+        }
+    }
