@@ -7,11 +7,11 @@
 }
 
 :root {
-    /*colors*/
     --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
     --DesaturatedDarkBlue: hsl(214, 17%, 51%);
     --GrayishBlue: hsl(212, 23%, 69%);
-    --LightGrayishBlue: hsl(210, 46%, 95%)
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --BoxShadow: hsl(214deg 17% 35% / 30%) 0px 48px 100px 0px
 }
 
 html {
@@ -64,7 +64,7 @@ h2 {
 
 article {
     margin: 0 1.8rem;
-    box-shadow: rgba(17, 12, 46, 0.05) 0px 48px 100px 0px;
+    box-shadow: var(--BoxShadow);
     border-radius: 1rem
 }
 
@@ -193,7 +193,8 @@ footer {
         justify-content: center;
         align-content: center;
         width: auto;
-        border-radius: 10px
+        border-radius: 10px;
+        box-shadow: var(--BoxShadow);
     }
 
     .share-box:after {
