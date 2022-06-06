@@ -14,8 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Live Site URL: https://article-preview-szimola.netlify.app/
 
 ## My process
 
