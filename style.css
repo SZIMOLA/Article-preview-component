@@ -72,7 +72,8 @@ article .img-box {
     background: url(images/drawers.jpg) no-repeat center;
     background-size: 110% auto;
     height: 53vw;
-    width: 100%
+    width: 100%;
+        opacity: 0.8
 }
 
 .text-box {
@@ -133,7 +134,7 @@ article .img-box {
     height: 3rem;
     background: url(images/avatar-michelle.jpg) no-repeat top;
     background-size: 100% auto;
-    border-radius: 50px
+    border-radius: 50px;
 }
 
 .author-box .info {
