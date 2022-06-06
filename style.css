@@ -73,13 +73,15 @@ article .img-box {
     background-size: 110% auto;
     height: 53vw;
     width: 100%;
-        opacity: 0.8
+    opacity: 0.8;
+    border-radius: 10px 10px 0 0
 }
 
 .text-box {
     padding: 3rem 2.4rem 1.6rem 2.4rem;
     background: white;
-    position: relative
+    position: relative;
+    border-radius: 0 0 10px 10px
 }
 
 .share-box {
@@ -168,13 +170,15 @@ footer {
     article .img-box {
         height: auto;
         background-size: cover;
-        width: 40%
+        width: 40%;
+        border-radius: 10px 0 0 10px
     }
 
     article .text-box {
         height: auto;
         width: 60%;
-        padding: 3rem 3rem 2.3rem 3rem
+        padding: 3rem 3rem 2.3rem 3rem;
+        border-radius: 0 10px 10px 0
     }
 
     article .author-box {
